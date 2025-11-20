@@ -7,13 +7,13 @@ repository-name: cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI
 title: Organizer Dashboard Web UI and Client of the Engex exhibition crowd management system
 ---
 
-# 🚀 Peraverse Organizer Dashboard Web UI (Team-07)
+#  Peraverse Organizer Dashboard Web UI (Team-07)
 
 The client-side interface for the 75Exhibition crowd management system.
 
 ---
 
-## 👥 Team & Supervisors
+##  Team & Supervisors
 
 | Role | E-Number | Name | Email |
 | :--- | :--- | :--- | :--- |
@@ -23,7 +23,7 @@ The client-side interface for the 75Exhibition crowd management system.
 
 ---
 
-## 👨‍💻 Individual Component Contributions (E/21/007 - Abeynayake A.G.C.D.)
+##  Individual Component Contributions (E/21/007 - Abeynayake A.G.C.D.)
 
 As part of the collaborative execution, my specific components and responsibilities on the **Frontend Web UI** included:
 
@@ -34,7 +34,7 @@ As part of the collaborative execution, my specific components and responsibilit
 
 ---
 
-## 💡 Introduction & Impact
+##  Introduction & Impact
 
 The Organizer Dashboard Web UI is the **client-side interface** built using **React, TypeScript, and Tailwind CSS**. It provides organizers with a highly **responsive** and **intuitive** platform to interact with the backend microservices for the 75Exhibition crowd management system. The application delivers **real-time data visualization**, secure authentication, and a seamless user experience for managing complex exhibition operations through a modern **Single-Page Application (SPA)** architecture.
 
@@ -46,7 +46,7 @@ The Organizer Dashboard Web UI is the **client-side interface** built using **Re
 
 ---
 
-## 🛠️ Features & Architecture
+##  Features & Architecture
 
 ### Key Frontend Features
 
@@ -120,6 +120,6 @@ Before running the frontend, ensure the **backend services are running** (refer 
 
 ---
 
-## 🏷️ Project Tags
+##  Project Tags
 
 `React`, `TypeScript`, `Vite`, `Tailwind CSS`, `WebSocket`, `Real-Time Dashboard`, `SPA`, `Responsive Design`, `JWT Authentication`, `Data Visualization`, `Frontend`, `UI/UX`, `75Exhibition`, `Crowd Management`
