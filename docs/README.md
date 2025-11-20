@@ -4,79 +4,85 @@ permalink: index.html
 
 # Please update this with your repository name and title
 repository-name: cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI
-title: Organizer Dashboard Web UI and Client of the Engex exhibition crowd management system
+title: Organizer Dashboard Web UI and Client of the Engex Exhibition Crowd Management System
 ---
 
-#  Peraverse Organizer Dashboard Web UI (Team-07)
+# Peraverse Organizer Dashboard Web UI (Team-07)
 
-The client-side interface for the 75Exhibition crowd management system.
+A complete frontend interface for the 75Exhibition crowd management system, designed to provide organizers with real-time data, analytics, communication tools, and an efficient building and event management workflow. 
 
 ---
 
-##  Team & Supervisors
+## 👥 Team and Supervisors
 
 | Role | E-Number | Name | Email |
 | :--- | :--- | :--- | :--- |
-| **Team** | E/21/007 | Abeynayake A.G.C.D. | e21007@eng.pdn.ac.lk |
-| **Team** | E/21/006 | Abeykoon A.M.U.I.B | e21006@eng.pdn.ac.lk |
-| **Supervisor** | | Ms. Yasodha Vimukthi | yasodhav@eng.pdn.ac.lk |
+| Team | E/21/007 | Abeynayake A.G.C.D. | e21007@eng.pdn.ac.lk |
+| Team | E/21/006 | Abeykoon A.M.U.I.B. | e21006@eng.pdn.ac.lk |
+| Supervisor | | Ms. Yasodha Vimukthi | yasodhav@eng.pdn.ac.lk |
 
 ---
 
-##  Individual Component Contributions (E/21/007 - Abeynayake A.G.C.D.)
+## 💡 Introduction
 
-As part of the collaborative execution, my specific components and responsibilities on the **Frontend Web UI** included:
+The Organizer Dashboard Web UI is a feature-rich **Single Page Application (SPA)** developed using **React, TypeScript, and Tailwind CSS**. It serves as the primary client-side platform for interacting with the 75Exhibition backend microservices. The system enables organizers to monitor crowd activity, manage buildings and events, visualize **real-time analytics**, and communicate through live channels.
 
-* **Authentication & Security Service:** Built the complete **Signup and Login interfaces**, implementing secure session persistence and JWT handling using **Axios** and **React Router**.
-* **Building & Organizer Management:** Developed the complex **CRUD interfaces** for managing building records and organizer details, including dynamic state management for exhibits and tags.
-* **Analytics & Feedback Services:** Built the interactive **Data Visualization dashboards** using Chart.js (key metrics, visitor check-ins) and implemented the **Visitor Feedback Module** with sentiment analysis and color-coding.
-* **Real-Time Communication Client:** Developed the **WebSockets client** for the live chat system, handling real-time message display and connection status.
+The application emphasizes high performance, **responsive UI design**, secure authentication mechanisms, and modular component architecture.
 
 ---
 
-##  Introduction & Impact
+## ✨ Complete Frontend Solution
 
-The Organizer Dashboard Web UI is the **client-side interface** built using **React, TypeScript, and Tailwind CSS**. It provides organizers with a highly **responsive** and **intuitive** platform to interact with the backend microservices for the 75Exhibition crowd management system. The application delivers **real-time data visualization**, secure authentication, and a seamless user experience for managing complex exhibition operations through a modern **Single-Page Application (SPA)** architecture.
+### End-to-End Dashboard Application
 
-### Solution & Impact Highlights
-* **Dynamic SPA Experience:** Provides **fast navigation** and smooth transitions using React Router for optimal user experience.
-* **Real-Time Data Visualization:** Implements **live charts** and analytics using modern visualization libraries like Chart.js for quick decision-making.
-* **Secure Client-Side Authentication:** Manages **JWT tokens** with automatic session handling and protected routes to ensure system security.
-* **Component-Based Architecture:** Utilizes modular, **reusable components** for maintainable and scalable code development.
+The system provides a complete user experience, including:
+
+* **Secure Authentication** and protected routing.
+* **Real-time Crowd Monitoring** with visual analytics.
+* **Building and Exhibit Management** via advanced CRUD workflows.
+* Event scheduling and lifecycle tracking.
+* Feedback analysis and **sentiment insights**.
+* **Data Export** in multiple formats.
+* **Live Chat** and communication between organizers.
+* A responsive and accessible UI across devices.
 
 ---
 
-##  Features & Architecture
+## 🛠️ Comprehensive Features and Architecture
 
-### Key Frontend Features
+### Authentication and Security
 
-#### **Authentication & Session Management**
-* **JWT Token Handling:** Uses **Axios interceptors** for automatic token injection and secure request handling.
-* **Protected Routes:** **React Router guards** prevent unauthorized access to sensitive dashboard components.
+* **JWT-based authentication** flow.
+* **Axios interceptors** for secure API calls with token injection.
+* **Protected routes** using React Router DOM.
+* Session persistence and automatic token refresh.
 
-#### **Dashboard Components**
-* **Building & Organizer Management:** Provides full **CRUD** (Create, Read, Update, Delete) interfaces with complex **form validation** and dynamic state management.
-* **Analytics Visualization:** Displays real-time and historical data (visitors, check-ins, session times) using **Chart.js**.
-* **Feedback Module:** Implements **sentiment analysis** and visual display (color-coded cards) for visitor feedback.
-* **Live Chat Client:** **WebSocket-based** client for real-time messaging with organizers and users.
+### Dashboard Component Suite
+This modular approach ensures maintainability and clear separation of concerns.
 
-#### **UI/UX Features**
-* **Styling:** Uses **Tailwind CSS** for responsive design and modern aesthetics (e.g., glass morphism effects).
-* **Interactive Elements:** Features smooth animations, collapsible cards, and **Toast notifications** for instant feedback.
+| Component | Functionality | Key Technology |
+| :--- | :--- | :--- |
+| **Buildings Management** | CRUD for buildings, zones, exhibits; **Multi-tag architecture**. | React State |
+| **Events Management** | Scheduling, creation, updates; Conflict detection. | React Router |
+| **Heatmap & Analytics** | **Real-time heatmap** of exhibition zones; Historical trend analysis. | Chart.js / Visualization Library |
+| **Feedback Widget** | Feedback listing, **Sentiment visualization**, Rating analysis. | Chart.js |
+| **Chat Client** | **Real-time messaging** interface; Typing indicators; **WebSocket** client. | WebSockets |
+| **Export Widget** | Export data in **CSV, Excel, JSON, and PDF** formats. | Client-side File Handling |
 
-### Architecture Overview
+### Technology Stack Highlights
+* **Core Technologies:** React 18, TypeScript, Vite, Tailwind CSS.
+* **Architecture:** Modular component design, Centralized API handling (Axios).
+* **Real-Time Support:** Native WebSockets.
 
-#### **Frontend Technology Stack**
-* **Core Framework:** **React 18** with **TypeScript**.
-* **Build Tool:** **Vite** for optimized production builds.
-* **Styling:** **Tailwind CSS**.
-* **Routing:** **React Router DOM**.
-* **HTTP Client:** **Axios** with interceptors.
-* **Real-Time:** Native **WebSockets**.
+---
 
-#### **Component Architecture**
-* **Modular Design:** Reusable widgets with clear separation of concerns.
-* **API Integration:** Full integration with RESTful backend microservices for data exchange.
+## 🎨 UI and UX Design
+
+* **Tailwind CSS-driven responsive layout.**
+* Component-based structure with reusable UI elements.
+* Interactive animations and transitions.
+* Accessible navigation with ARIA roles and keyboard support.
+* Clear validation messages and error feedback.
 
 ---
 
