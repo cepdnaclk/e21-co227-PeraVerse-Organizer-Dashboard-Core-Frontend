@@ -88,44 +88,81 @@ This modular approach ensures maintainability and clear separation of concerns.
 
 ## How to Run
 
-Before running the frontend, ensure the **backend services are running** (refer to the backend project page).
-
-1. **Clone Repository**
-   ```bash
-   git clone [https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI.git](https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI.git)
-   cd e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI
-   ```
+1.  **Clone Repository**
+   ```bash
+   git clone https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard.git
+   cd e21-co227-PeraVerse-Organizer-Dashboard
+   ```
 
 2. **Install Dependencies**
-   ```bash
-   npm install
-   ```
 
-3. **Environment Configuration**
-    * Create a `.env` file in the root directory and set the backend URL:
-        ```bash
-        VITE_BASE_API_URL=http://localhost:5000 
-        ```
+   **a) Frontend**
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-4. **Running the System Locally**
-    ```bash
-    npm run dev
-    # The application will run on the port shown in the console (e.g., http://localhost:5173).
-    # Navigate to http://localhost:5173/dashboard/
-    ```
+   **b) Backend**
+
+   *Websocket for kiosk*
+   ```bash
+   cd backend/backend/tools
+   npm install
+   ```
+
+   *For Each Service*
+   ```bash
+   # go inside each service and run the follwing command in the directory where the src file is situated
+   npm install
+   ```
+
+4. **Environmental Variables : Edit .env file inside the backend:**
+   ```bash
+   PORT=5000
+   BASE_URL=http://localhost:5000
+   JWT_SECRET="Your JWT secret key"
+   DB_USER=postgres
+   DB_PASSWORD="Your database password"
+   DB_HOST=localhost
+   DB_PORT=5432
+   DB_NAME=organizer_dashboard
+   ADMIN_EMAIL="Email sending approval request to admin"
+   ADMIN_PASSWORD="your-app-password for ADMIN_EMAIL"
+   ADMIN_NOTIFY_EMAIL="Admin’s email(this email receives the approval request)"
+   ```
+
+5. **Running the System Locally**
+
+   **a) Frontend : will be running on http://localhost:5173**
+   ```bash
+   cd frontend
+   npm run dev
+   # Then navigate to http://localhost:5173/dashboard/
+   ```
+
+   **b) Backend : will be running on http://localhost:5000**
+   ```bash
+   # Websocket for kiosk : first you have to run the websocket
+   cd backend/backend/tools
+   nodemon ws-server.js
+
+   # Then go inside each service and run the following command
+   # inside the directory where the index.js file is situated
+   nodemon index
+   ```
 
 ---
 
 ## Links
 
-- [Frontend Repository](https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Core-Frontend)
-- [Backend Repository](https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Core-Backend)
-- [Project Page](https://cepdnaclk.github.io/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI/)
+- [Project Repository](https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Core-Backend)
+- [Project Page](https://cepdnaclk.github.io/e21-co227-PeraVerse-Organizer-Dashboard-Core-Backend/)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
----
+### Tags
+`React`, `Express.js`, `Node.js`, `Full-Stack`, `Microservices`, `RESTful API`, `JWT Authentication`,  
+`Event Management`, `Dashboard`, `Crowd Management`, `75Exhibition`
 
-##  Project Tags
-
-`React`, `TypeScript`, `Vite`, `Tailwind CSS`, `WebSocket`, `Real-Time Dashboard`, `SPA`, `Responsive Design`, `JWT Authentication`, `Data Visualization`, `Frontend`, `UI/UX`, `75Exhibition`, `Crowd Management`
+[//]: # (Please refer this to learn more about Markdown syntax)
+[//]: # (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
