@@ -7,19 +7,25 @@ repository-name: cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI
 title: Organizer Dashboard Web UI and Client of the Engex exhibition crowd management system
 ---
 
-# Peraverse Organizer Dashboard Web UI (Team-07)
+# 🚀 Peraverse Organizer Dashboard Web UI (Team-07)
+
+The client-side interface for the 75Exhibition crowd management system.
 
 ---
 
-## Team
-- E/21/007, Abeynayake A.G.C.D., [e21137@eng.pdn.ac.lk](mailto:e21007@eng.pdn.ac.lk)
-- E/21/006, Abeykoon A.M.U.I.B, [e21391@eng.pdn.ac.lk](mailto:e21006@eng.pdn.ac.lk)
+## 👥 Team & Supervisors
+
+| Role | E-Number | Name | Email |
+| :--- | :--- | :--- | :--- |
+| **Team** | E/21/007 | Abeynayake A.G.C.D. | e21007@eng.pdn.ac.lk |
+| **Team** | E/21/006 | Abeykoon A.M.U.I.B | e21006@eng.pdn.ac.lk |
+| **Supervisor** | | Ms. Yasodha Vimukthi | yasodhav@eng.pdn.ac.lk |
 
 ---
 
 ## 👨‍💻 Individual Component Contributions (E/21/007 - Abeynayake A.G.C.D.)
 
-As part of the collaborative execution, my specific components and responsibilities on the Frontend Web UI included:
+As part of the collaborative execution, my specific components and responsibilities on the **Frontend Web UI** included:
 
 * **Authentication & Security Service:** Built the complete **Signup and Login interfaces**, implementing secure session persistence and JWT handling using **Axios** and **React Router**.
 * **Building & Organizer Management:** Developed the complex **CRUD interfaces** for managing building records and organizer details, including dynamic state management for exhibits and tags.
@@ -28,33 +34,19 @@ As part of the collaborative execution, my specific components and responsibilit
 
 ---
 
-## Supervisors
-- Ms. Yasodha Vimukthi, [yasodhav@eng.pdn.ac.lk](mailto:yasodhav@eng.pdn.ac.lk)
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Solution & Impact](#solution--impact)
-3. [Features & Architecture](#features--architecture)
-4. [How to Run](#how-to-run)
-5. [Links](#links)
-
----
-
-## Introduction
+## 💡 Introduction & Impact
 
 The Organizer Dashboard Web UI is the **client-side interface** built using **React, TypeScript, and Tailwind CSS**. It provides organizers with a highly **responsive** and **intuitive** platform to interact with the backend microservices for the 75Exhibition crowd management system. The application delivers **real-time data visualization**, secure authentication, and a seamless user experience for managing complex exhibition operations through a modern **Single-Page Application (SPA)** architecture.
 
-## Solution & Impact
-
-The Web UI delivers a highly impactful solution by:
-
+### Solution & Impact Highlights
 * **Dynamic SPA Experience:** Provides **fast navigation** and smooth transitions using React Router for optimal user experience.
 * **Real-Time Data Visualization:** Implements **live charts** and analytics using modern visualization libraries like Chart.js for quick decision-making.
-* **Responsive Design:** Ensures **cross-device compatibility** allowing access on desktops, tablets, and mobile devices.
 * **Secure Client-Side Authentication:** Manages **JWT tokens** with automatic session handling and protected routes to ensure system security.
 * **Component-Based Architecture:** Utilizes modular, **reusable components** for maintainable and scalable code development.
 
-## Features & Architecture
+---
+
+## 🛠️ Features & Architecture
 
 ### Key Frontend Features
 
@@ -86,7 +78,7 @@ The Web UI delivers a highly impactful solution by:
 * **Modular Design:** Reusable widgets with clear separation of concerns.
 * **API Integration:** Full integration with RESTful backend microservices for data exchange.
 
-
+---
 
 ## How to Run
 
@@ -104,21 +96,23 @@ Before running the frontend, ensure the **backend services are running** (refer 
    ```
 
 3. **Environment Configuration**
-    * Create a `.env` file in the root directory and set the backend URL:
-        ```bash
-        VITE_BASE_API_URL=http://localhost:5000 
-        ```
+    * Create a `.env` file in the root directory and set the backend URL:
+        ```bash
+        VITE_BASE_API_URL=http://localhost:5000 
+        ```
 
 4. **Running the System Locally**
-    ```bash
-    npm run dev
-    # The application will run on the port shown in the console (e.g., http://localhost:5173).
-    # Navigate to http://localhost:5173/dashboard/
-    ```
+    ```bash
+    npm run dev
+    # The application will run on the port shown in the console (e.g., http://localhost:5173).
+    # Navigate to http://localhost:5173/dashboard/
+    ```
+
+---
 
 ## Links
 
-- [Frontend Repository](https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI)
+- [Frontend Repository](https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Frontend)
 - [Backend Repository](https://github.com/cepdnaclk/e21-co227-PeraVerse-Organizer-Dashboard-Core-Backend)
 - [Project Page](https://cepdnaclk.github.io/e21-co227-PeraVerse-Organizer-Dashboard-Frontend-UI/)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
