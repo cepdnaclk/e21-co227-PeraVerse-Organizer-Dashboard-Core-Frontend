@@ -95,6 +95,8 @@ cd Peraverse-Organizer-Dashboard-Core-Frontend
 ```
 
 2. **Install Dependencies**
+
+   **Frontend**
 ```bash
 npm install
 ```
@@ -107,21 +109,13 @@ Create a `.env` file in the **root directory** and set the backend API URL:
 VITE_BASE_API_URL=http://localhost:5000
 ```
 
-4. **Run the Frontend Locally**
+4. **Running the Frontend Locally**
+
+The frontend will run on **http://localhost:5173**:
+
 ```bash
 npm run dev
-```
-
-The frontend will start on the port shown in the terminal, usually:
-
-```
-http://localhost:5173
-```
-
-Navigate to:
-
-```
-http://localhost:5173/dashboard/
+# Navigate to http://localhost:5173/dashboard/ to access the dashboard
 ```
 
 ---
